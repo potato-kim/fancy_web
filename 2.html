@@ -3,20 +3,177 @@
 <head>
   <title>할짓없냐?</title>
   <meta charset="utf-8">
+  <style>
+    @font-face{
+      font-family:나눔스퀘어;
+      src:url('C:\Windows\Fonts\나눔스퀘어.ttf');
+    }
+    @font-face{
+      font-family:맑은고딕;
+      src:url('malgun.ttf');
+    }
+    @font-face{
+      font-family:타이포팩토리EB;
+      src:url('Typo_FactoryEB.ttf');
+    }
+    h1{
+      text-align:center;
+      font-size:0;
+      <!-- border-bottom:1px solid gray; -->
+      margin:0;
+      color:rgba(0,0,0,0)
+      padding:20px;
+    }
+    h2 {
+      color:#465D78;
+      text-align:left;
+    }
+    #article p a {
+      font-size:15pt;
+      color:black;
+      text-decoration:underline;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    #grid{
+      font-family:나눔스퀘어;
+      display:grid;
+      grid-template-columns:250px 1fr;
+    }
+    #grid ol{
+      color:#566270;
+      font-size:20px;
+      <!-- border-right:2px solid gray; -->
+      width:150px;
+      height:2500px;
+      margin:0;
+      padding-left:60px;
+      padding-top:5px;
+      background-color:#E0E3DA;
+    }
+    #grid ol li a{
+      line-height: 30px;
+      color:#566270;
+    }
+    #grid ol li a:hover{
+      color:purple;
+      font-weight:bold;
+    }
+    #grid h3{
+      font-family: 타이포팩토리EB;
+      font-size:20px;
+      color:#566270;
+      margin:30px 70px 20px 0px;
+    }
+    #article{
+      font-size:20px;
+      padding:40px;
+      padding-left:80px;
+      background-color: #FFFFF3;
+      line-height: 35px;
+    }
+    #article h2{
+      font-family:타이포팩토리EB;
+    }
+    #article b{
+      font-family: 맑은고딕;
+    }
+    .header{
+      text-align:center;
+    }
+    body{
+      padding:0px 150px 0px 150px;
+    }
+
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">감자의 멋진 홈페이지</a></h1>
-  <ol>
-    <li><a href="2.html">HTML</a></li>
-    <li><a href="3.html">CSS</a></li>
-    <li><a href="4.html">JavaScript</a></li>
-  </ol>
-  <h2>HTML</h2>
-  <p><a href="https://www.w3.org/TR/html5/" target="_blank" title="html5 speicification">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
-  </p><p style="margin-top:45px;">HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
-  </p>
-  <p>
-    <div id="disqus_thread"></div>
+  <div class="header">
+    <a href="index.html"><img src="domain.png"></a>
+  </div>
+  <a href="index.html"><h1>감자의 멋진 홈페이지</h1></a>
+  <div id="grid">
+    <ol>
+      <h3>INDEX</h3>
+      <li><a href="2.html">영탁</a></li>
+      <li><a href="3.html">CSS</a></li>
+      <li><a href="4.html">JavaScript</a></li>
+    </ol>
+    <!--
+    <h1><a href="index.html">감자의 멋진 홈페이지</a></h1>
+    <ol>
+      <li><a href="2.html"><font color="#0B6A7F">HTML</font></a></li>
+      <li><a href="3.html"><font color="#0B6A7F">CSS</font></a></li>
+      <li><a href="4.html"><font color="#0B6A7F">JavaScript</font></a></li>
+    </ol>
+    -->
+    <div id="article">
+      <h2>영탁</h2>
+      <img src="zerotak.gif" width="300px" margin="20px">
+      <p>
+        영탁(본명: 박영탁(한국 한자: <b>朴永卓</b>), 1983년 5월 13일 ~ )은 대한민국의 트로트 가수이자 배우이다.
+        <a href="https://ko.wikipedia.org/wiki/%EB%82%B4%EC%9D%BC%EC%9D%80_%EB%AF%B8%EC%8A%A4%ED%84%B0%ED%8A%B8%EB%A1%AF" target="_blank" title="내일은 미스터트롯">
+        내일은 미스터트롯</a> 프로그램에서 선(2위)을 차지하였다.
+        특히 강진의 '막걸리 한잔'과 주현미의 '추억으로 가는 당신'을 부르면서 화제가 됐다.
+        절대음감이며 뛰어난 가창력을 보유하고 있다.
+        2020년 꼰대인턴으로 배우로도 데뷔를 했다.
+        싱어송라이터이며 프로듀싱을 해주기도 한다.
+        장민호에게 ‘읽씹안읽씹’ 곡을 주었고 이찬원에게는 아직 나오지는 않았지만 ‘찬찬히’,
+        ’참 좋은 사람’ 두 곡을 주었으며
+        이대원에게는 ‘챔피언’ 곡을 주고, 정동원과 남승민에게 '짝짝꿍짝' 듀엣곡을 주었다.
+        직접 그린 그림으로 공식 굿즈인 흰 반팔 티셔츠가 제작되었다.
+        <ul>
+          <li>아버지는 직업군인, 어머니는 공무원이었으며 삼촌이 경찰이라고 한다.
+          </li>
+          <li>과거 JTBC에서 방영한 히든싱어 휘성편에서 참가자로 출연한 모습을 찾아 볼 수 있다. 히든싱어 휘성 편이 꽤 인기있는 회차였음에도 영탁이 여기 출연해서 3라운드까지 올라간 사실은 미스터트롯 방영 이후에나 크게 알려졌다.
+          지금과는 다르게 안경을 끼고 파마를 한 모습이고, 본래 R&B 보컬 가수 출신이었던 만큼 트로트 말고도 다른 분야의 노래 실력도 출중함을 알 수 있다.
+          2014년과 2015년에 같은 휘성 모창능력자들과 함께 음반을 냈다. 더불어 대학생 시절엔 음악과 전혀 상관이 없는 광고 쪽을 전공했었으나 휘성의 노래를 듣고 음악을 하고 싶어 상경하게 되었고 마침내 가수의 길을 걷게 되었다고 한다. 히든싱어 출연 당시엔 기나긴 무명 세월 도중 잠시 겸임교수를 하고 있었다. 또한 이 무대 촬영 때 성대결절의 위기가 있었다고. 그럼에도 오랜만에 무대의 맛을 본 바람에 다시 한번 가수로서의 꿈을 꾸게 되었다고 한다.
+          </li>
+          <li>유희왕, 보노보노, 스펀지밥, 혈액형에 관한 간단한 고찰, 링컨의 집에서 살아남기, 포켓몬스터 썬&문 등 여러 만화 OST에도 참여하였다.
+          </li>
+          <li>트로트 가수로서의 모습이 각인되어 있지만 선술했듯이 발라드 가수였으며 랩을 잘하는 모습도 보이는데 L-Class(지방아이들소울) 시절 보컬뿐 아니라 랩도 담당했었다.
+          </li>
+          <li>달리기를 잘 하지 못한다는 기믹이 있다. 미스터트롯을 보면 알 수 있듯이 꼴찌로 들어왔다. 그래서 댄스 트롯을 뽑게 되었는데 동료들이 야유를 하였다. 그러자 "현역부가 정통 트롯을 하면 재미가 없다고" 변명(?)을 하였다.  그 결과 댄스 트롯의 도전은 크게 성공하였다.
+          </li>
+          <li>안동MBC 어린이 합창단 출신으로 알려져 있다.  그래서 2019년 정기발표회에 초대가수로 나와 공연을 하기도 했다.
+          </li>
+          <li>힙합가수 San E랑 개그맨 최양락, 조성모를 닮았다. 그리고 윤형빈을 닮았다는 얘기도 꽤 듣는다고한다.
+          </li>
+          <li>배려심이 많고 동생들을 잘 챙겨줘 신인선, 김수찬, 임영웅에게 우리형이라 불리고 있다.
+          </li>
+          <li>임영웅과는 미스터트롯 출연 전 부터 친했던 사이. 2020년 4월 17일 출연한 라디오 '이수영의 12시에 만납시다' 에서 밝힌 바에 따르면 영탁이 과거 초대가수로 갔던 행사에 임영웅도 있었는데, 대기시간 둘이 나란히 함께 있을때 영탁이 임영웅에게 계속 들이대고 치댔다고 한다.  심지어 당시 첫만남(!)이었는데도 임영웅에게 자기랑 같이 안경을 맞추러가자고 얘기하기도 했다고(...)
+          아직 운전면허증이 없다. (미운우리새끼 2020년 5월 31일 방송분 참고) 이유는 혹여나 음주운전을 하게될까봐 라고.
+          </li>
+          <li>과거 추락사고로 발목뼈가 30여개 정도로 조각난 적이 있어 군면제됐다. 발목 수술 사실을 숨기고 훈련소까지 입소하였으나 결국 재검 후 군면제 판정을 받았다고.
+          </li>
+          <li>긴 가수 생활 때문인지 여기저기 흩어져 있는 자료들 때문에 팬들이 모여 만들고 있는 링크 아카이브가 있다.
+          </li>
+          <li>팬들과 소통할 수 있는 사랑의 콜센타 등 예능 프로그램, 그리고 본인의 인스타그램 계정을 통해 "언젠가 모두 만나게 됩니다."라는 말이 자신의 인생철학 중 하나임을 밝혔다. 그 외 <b>無忍不勝</b>(무인불승)을 자신의 좌우명으로 삼고있다고 한다.
+          </li>
+          <li>2020년 4월 5일 TBS FM 최일구의 허리케인 라디오에 출연했는데 자신의 이름을 밝히지 않은 어느 14세 소녀 청취자가 자신은 원래 아미인데 영탁으로 갈아탔으며, 좀 기다렸다가 자신과 결혼해달라(!!!)는 사연 아닌 프러포즈를 보내 라디오 진행자와 본인을 폭소하게 만들었다는 후문.
+          </li>
+          <li>위의 같은 라디오 방송 3월 4일에는 '막걸리 한잔'의 원곡가수 강진과 동반 출연했다. 강진은 영탁의 맛깔스런 노래에 대한 칭찬을 아끼지 않았고 영탁 덕분에 자신의 곡이 대중에게 많이 알려졌다고 고마워했다. 이후 '막걸리 한잔'을 영탁 버전, 강진 버전 순서로 불렀는데 라이브 도중 강진이 "우리 영탁이 이뻐가지고 용돈 줄라고" 하며 신사임당 2장을 건네주었다!!
+          </li>
+          <li>한편 8월 13일 강진은 영탁이 고정출연하고 있는 사랑의 콜센타 20화 '여름 특집 : 트롯박사'편에 출연하여 영탁과의 1대1 데스매치에서 영탁의 대표곡 찐이야를 부르기도 했다. 선배의 무대에 감동한 영탁은 눈물까지 보이며 "앞으로 제가 잘 걸어나가겠다."는 말을 해 훈훈한 분위기가 연출되었다.
+          </li>
+          <li>과거 KBS 아침마당에서도 공개했던 사실이지만, MBC 라디오 스타(황금어장)에서도 최근 출연하여 밝힌 사실로, 영탁의 어머니가 무속인인 것으로 밝혀졌다. 영탁이 고등학생이었던 시절, 어머니가 교회를 다니고 있었음에도 불구하고 자꾸 신령님이 보이던 중 영탁이 3층 난간 추락사고로 대수술을 치르게 되었고 결국 영탁을 위해 수술을 앞두고 무속인을 찾아가 법당 차리고 무속인의 길을 걷게 되었다고 한다. 어머니는 공무원 생활을 오래 했다 보니 영탁이 가수의 길보다는 안정적인 직업을 선택하기 바랐으나, 신령님이 "전 국민이 아는 가수 될 테니 놔둬라."고 했다고...
+          </li>
+          <li>아버지는 뇌경색으로 투병중이신데 미스터 트롯에서 아들의 모습을 보고 건강상태가 호전되었다고 한다. 이 때문에 스케쥴로 바쁜 와중에도 아버지와 하루 서너차례 통화를 한다고 한다.
+          </li>
+          <li>그림 실력이 엄청나다. 어린 시절 시간만 나면 그림을 그렸는데, 당시 유행하던 드래곤볼 같은 만화류 뿐만 아니라 nba선수의 스틸사진 까지 아주 정확히 묘사할 만한 실력을 가지고 있다.
+          </li>
+          <li>춤을 꽤나 잘 추며 관심도 또한 상당히 높은 것으로 추정된다.  비보잉 동작도 얼추 잘 따라한다.  하지만 본인은 팬들은 전혀 믿어주지않지만 자신이 계속 몸치라고 주장중이며 이유는 자신이 춤을 췄을 때 아저씨 느낌이 많이 나서라고한다. 그래서 그 느낌을 최대한 빼기위해서 노력중이라고.
+          </li>
+          <li>MBC everyone 대한외국인 87화(2020년 6월 10일)에서 자력으로 우승을 차지하면서 해당 프로그램 역대 24번째 우승자가 되었다.
+          </li>
+        </ul>
+        <input type="text" placeholder="영탁에 대해 궁금한 거 있냐?">
+        <input type="password" placeholder="비밀번호">
+      </p>
+      <p>
+  <div id="disqus_thread"></div>
 <script>
 
 /**
@@ -36,6 +193,8 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
- </p>
+</p>
+    </div>
+  </div>
 </body>
 </html>
