@@ -3,38 +3,61 @@
 <head>
   <title>할짓없냐?</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #article{
+      background-image:url("pepe.jpg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    #article .backgroundcolor{
+      padding:20px;
+      background-color: #FFFFF3;
+      background-color: rgba(255, 255, 255, 0.9)
+    }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">감자의 멋진 홈페이지</a></h1>
-  <ol>
-    <li><a href="2.html">HTML</a></li>
-    <li><a href="3.html">CSS</a></li>
-    <li><a href="4.html">JavaScript</a></li>
-  </ol>
-  <h2>JavaScript</h2>
-  <p>이게 뭐냐면 잠깐만 기다려봐...구글링좀 하고올게</p>
-  <p><a href="https://www.google.com/search?q=javascript&rlz=1C1NHXL_koKR790KR792&oq=javascript&aqs=chrome..69i57j0l7.4495j0j7&sourceid=chrome&ie=UTF-8" target="_blank" title="슬슬열이오르기시작한방문자">그냥 내가 확인할게...</a></p>
-  <p>
-    <div id="disqus_thread"></div>
-<script>
+  <div class="header">
+    <a href="index.html"><img src="domain.png" width="100%"></a>
+  </div>
+  <div id="grid">
+    <ol>
+      <h3>INDEX</h3>
+      <li><a href="2.html">영탁</a></li>
+      <li><a href="3.html">CSS</a></li>
+      <li><a href="4.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <div class="backgroundcolor">
+      <h2>JavaScript</h2>
+      <p>
+        <p>이게 뭐냐면 잠깐만 기다려봐...구글링좀 하고올게</p>
+        <p><a href="https://www.google.com/search?q=javascript&rlz=1C1NHXL_koKR790KR792&oq=javascript&aqs=chrome..69i57j0l7.4495j0j7&sourceid=chrome&ie=UTF-8" target="_blank" title="슬슬열이오르기시작한방문자">으응... 됐어... 그냥 내가 확인할게...</a></p>
+        <input type="text" placeholder="javaScript에 대해 궁금한 거 있냐?">
+        <input type="password" placeholder="비밀번호">
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://fancy-potato.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
- </p>
-</body>
+      <div id="disqus_thread"></div>
+          <script>
+
+          /**
+          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+          /*
+          var disqus_config = function () {
+          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          };
+          */
+          (function() { // DON'T EDIT BELOW THIS LINE
+          var d = document, s = d.createElement('script');
+          s.src = 'https://fancy-potato.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+          })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              </div>
+            </div>
+          </div>
 </html>

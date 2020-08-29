@@ -3,43 +3,51 @@
 <head>
   <title>할짓없냐?</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1><a href="index.html">감자의 멋진 홈페이지</a></h1>
-  <ol>
-    <li><a href="2.html">HTML</a></li>
-    <li><a href="3.html">CSS</a></li>
-    <li><a href="4.html">JavaScript</a></li>
-  </ol>
-  <h2>CSS</h2>
-  <img src="https://canduh.files.wordpress.com/2016/07/but-why-meme-generator-but-why-84103d.jpg" width="50%">
-  <p>
-    <br>그런건 나도 몰라 물어보지마 귀찮게하지마. <br>
-    어차피 너 이런거 보려고 내 홈페이지 온 거 아니잖아?<br>
-    그냥 맘 편히 내 의식의 흐름이나 구경해.
-  </p>
-  <p><a href="1.html">아..응..그게뭔데...?</a></p>
-  <p>
+  <div class="header">
+    <a href="index.html"><img src="domain.png" width="100%"></a>
+  </div>
+  <div id="grid">
+    <ol>
+      <h3>INDEX</h3>
+      <li><a href="2.html">영탁</a></li>
+      <li><a href="3.html">CSS</a></li>
+      <li><a href="4.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+      <h2>CSS</h2>
+      <img src="https://canduh.files.wordpress.com/2016/07/but-why-meme-generator-but-why-84103d.jpg" width="50%">
+      <p>
+        <br>그런건 나도 몰라 물어보지마 귀찮게하지마. <br>
+        어차피 너 이런거 보려고 내 홈페이지 온 거 아니잖아?<br>
+        그냥 맘 편히 내 의식의 흐름이나 구경해.
+      </p>
+      <p><a href="1.html">아..응..그게뭔데...?</a></p>
+        <input type="text" placeholder="CSS에 대해 궁금한 거 있냐?">
+        <input type="password" placeholder="비밀번호">
     <div id="disqus_thread"></div>
-<script>
+        <script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://fancy-potato.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
- </p>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://fancy-potato.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+          </div>
 </body>
 </html>
